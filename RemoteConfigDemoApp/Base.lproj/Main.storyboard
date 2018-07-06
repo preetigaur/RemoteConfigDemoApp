@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b2r-dT-7Vu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ga4-7G-VQW">
+            <objects>
+                <viewController id="b2r-dT-7Vu" customClass="ViewController" customModule="FirebaseExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DZx-1U-kcj"/>
+                        <viewControllerLayoutGuide type="bottom" id="lL2-cL-Q4q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5D5-Md-RIp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dzz-zx-NNP">
+                                <rect key="frame" x="26" y="318.5" width="323" height="30"/>
+                                <state key="normal" title="Huge amounts to text to write"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH2-60-ZaI">
+                                <rect key="frame" x="16" y="389.5" width="343" height="30"/>
+                                <state key="normal" title="Reload Data"/>
+                                <connections>
+                                    <action selector="btnReloadData_Click:" destination="b2r-dT-7Vu" eventType="touchUpInside" id="rR6-Te-9tx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jH2-60-ZaI" firstAttribute="top" secondItem="dzz-zx-NNP" secondAttribute="bottom" constant="41" id="3Bf-UY-ch9"/>
+                            <constraint firstItem="dzz-zx-NNP" firstAttribute="centerY" secondItem="5D5-Md-RIp" secondAttribute="centerY" id="DUS-d3-AX1"/>
+                            <constraint firstItem="dzz-zx-NNP" firstAttribute="leading" secondItem="5D5-Md-RIp" secondAttribute="leadingMargin" constant="10" id="a30-D5-OXu"/>
+                            <constraint firstItem="jH2-60-ZaI" firstAttribute="leading" secondItem="5D5-Md-RIp" secondAttribute="leadingMargin" id="bbl-Pp-8PU"/>
+                            <constraint firstItem="dzz-zx-NNP" firstAttribute="centerX" secondItem="5D5-Md-RIp" secondAttribute="centerX" id="emm-K9-eJZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jH2-60-ZaI" secondAttribute="trailing" id="pMd-oZ-mkM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dzz-zx-NNP" secondAttribute="trailing" constant="10" id="szO-t6-vRT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ABl-2H-rN3"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnRandomButton" destination="dzz-zx-NNP" id="ehT-5q-bdA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvQ-Ma-vP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="277"/>
+        </scene>
+    </scenes>
+</document>
